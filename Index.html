@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rick & Morty</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rick & Morty all characters</h1>
+    <button id="getCharactersBtn" class="button">Obtener personajes</button>
+    <button id="clearBtn" class="button">Limpiar campos</button>
+
+    <table id="charactersTable" class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Estado</th>
+          <th>Especie</th>
+          <th>Tipo</th>
+          <th>Género</th>
+        </tr>
+      </thead>
+      <tbody id="charactersBody"></tbody>
+    </table>
+
+    <h2>Filtrar personajes</h2>
+    <div class="form-group">
+      <label for="nameInput" class="label">Nombre:</label>
+      <input type="text" id="nameInput" class="input">
+    </div>
+  
+    <div class="form-group">
+      <label for="statusInput" class="label">Estado:</label>
+      <input type="text" id="statusInput" class="input">
+    </div>
+  
+    <div class="form-group">
+      <label for="speciesInput" class="label">Especie:</label>
+      <input type="text" id="speciesInput" class="input">
+    </div>
+  
+    <div class="form-group">
+      <label for="typeInput" class="label">Tipo:</label>
+      <input type="text" id="typeInput" class="input">
+    </div>
+  
+    <div class="form-group">
+      <label for="genderInput" class="label">Género:</label>
+      <input type="text" id="genderInput" class="input">
+    </div>
+  
+    <button id="filterBtn" class="button">Filtrar personajes</button>
+  
+    <div id="error" class="error-message"></div>
+    <div id="successMessage" class="success-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
